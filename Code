@@ -1,0 +1,11 @@
+#replaces all vowels in an user's input with the letter of the user's choice
+
+sample = input("Enter a word: ")
+new_letter = input("Enter the letter you want to replace with:")
+translation = ""
+for element in sample:
+    if element in "AEIOUaeiou":
+        translation += new_letter
+    else:
+        translation += element
+print(translation)
